@@ -1,0 +1,88 @@
+body {
+  background-color: rgb(215, 238, 250);
+}
+.imgIntro {
+  height: 150px;
+  width: 100%;
+}
+
+.yellow {
+  border: 1px solid rgba(0, 0, 255, 0.543);
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 255, 0.433);
+  background-color: yellow;
+}
+.bar {
+  border: 1px solid rgba(0, 0, 255, 0.543);
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 255, 0.433);
+  color: yellow;
+  width: 50%;
+}
+.navbar {
+  background: url(images/water.jpg);
+  background-repeat: none;
+  background-size: auto;
+}
+.nav-link {
+  color: white;
+  width: 50%;
+}
+.nav-item :hover {
+  color: yellow;
+  /* background-color: rgba(0, 0, 255, 0.29); */
+}
+
+.dropdown-menu {
+  color: white;
+  background-color: rgba(0, 0, 255, 0.29);
+  width: 50%;
+}
+.dropdown-item {
+  color: white;
+}
+.dropdown-item:hover {
+  color: yellow;
+  background-color: rgba(0, 0, 255, 0.29);
+}
+#red {
+  color: red;
+  letter-spacing: 2px;
+}
+.sample {
+  max-width: 40em;
+  flex-direction: row;
+}
+.sample img {
+  max-width: 25%;
+  margin: auto;
+  padding: 0.5em;
+  border-radius: 1.7em;
+  box-shadow: 5px 5px 5px rgba(0, 0, 255, 0.376);
+}
+.sample-body {
+  display: flex;
+}
+.sample-text-section {
+  max-width: 60%;
+}
+.cta-section {
+  max-width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.cta-section .btn {
+  padding: 0.3em 0.5em;
+}
+.cta-section .prijs {
+  background-color: rgba(0, 0, 0, 0.744);
+  color: lime;
+  border-radius: 5px;
+  font-size: 0.9em;
+  padding: 0 5px;
+}
+/* section {
+  padding-top: 300px;
+} */
