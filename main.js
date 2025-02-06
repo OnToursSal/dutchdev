@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   var navLinks = document.querySelectorAll(
-    ".navbar-collapse .home,.dropdown-menu .dropdown-item "
+    ".navbar-collapse .nav-item,.dropdown-menu .dropdown-item "
   );
   var navbarCollapse = document.querySelector(".navbar-collapse");
 
