@@ -9,493 +9,1179 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>On Tours</title>
   </head>
-  <body >
-
-    <!-- navbar -->
-
-    <nav class="navbar sticky-top navbar-expand-lg navbar-dark mb-1">
-      <div class="container xxl">
-        <a class="navbar-brand" href="#">
-          <img
-            class="rounded me-2"
-            src="images/logo1.jpg"
-            alt=""
-            width="70"
-            height="70"
-          />
-          <span class="fw-bold text-light"
-            >OnTours-<span id="red">Sal</span>-Kaap Verdië</span>
-        </a>
-        <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+  <body>
+    <!-- <video
+      id="background-video"
+      autoplay
+      loop
+      muted
+      poster="https://assets.codepen.io/6093409/river.jpg"
+    >
+      <source
+        src="https://assets.codepen.io/6093409/river.mp4"
+        type="video/mp4"
+      /> -->
+    </video>
+    <nav
+      class="navbar fixed-bottom navbar-expand-lg bg-primary navbar-dark py-3"
+    >
+      <div class="container">
+        <img class="logo" src="images/logo1.jpg" alt="" />
+        <a href="#" class="navbar-brand px-5">
+          On Tours - <span class="text-danger fw-bold">SAL</span></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-
-
-          <ul class="navbar-nav ms-auto ">
-            <li class="nav-item ">
-
-
-              <a class="nav-link home"  aria-current="page" href="#">Home</a>
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Home</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#intro" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Watersport
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="#catamaran">Catamaran</a></li>
-                
-                <li><a class="dropdown-item" href="#jetski">Jetski</a></li>
-                <li><a class="dropdown-item" href="#zeilboot">Zeilboot</a></li>
-                
-              </ul>
+            <li class="nav-item">
+              <a href="#eilandtour" class="nav-link">Eiland Tour</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Sport
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="#paardrijden">Paardrijden</a></li>
-                <li><a class="dropdown-item" href="#vissen">Vissen</a></li>
-                <li><a class="dropdown-item" href="#snorkelen">Snorkelen</a></li>
-              </ul>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Buggy Tours
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="#buggie(cf550)">Buggie (CF 550)</a></li>
-                  <li><a class="dropdown-item" href="#buggie(zforce1000)">Buggie (ZForce 1000}</a></li>
-                  <li><a class="dropdown-item" href="#familie buggie">Familie Buggy</a></li>
-                  <li><a class="dropdown-item" href="#quad">Quad</a></li>
-                </ul>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Diverse
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <li><a class="dropdown-item" href="#groeps eiland tour">Groeps eiland Tour</a></li>
-                    <li><a class="dropdown-item" href="#prive eiland tour">Privé eiland Tour</a></li>
-                    <li><a class="dropdown-item" href="#zipline">Zipline</a></li>
-                  </ul>
-                </li>
-              </li>
+            <li class="nav-item">
+              <a href="#sport" class="nav-link">Sport</a>
             </li>
+            <li class="nav-item">
+              <a href="#buggy" class="nav-link">Buggy Tours</a>
+            </li>
+            <li class="nav-item">
+              <a href="#diverse" class="nav-link">Diverse</a>
+            </li>
+             
           </ul>
-
-       
+        </div>
+      </div>
     </nav>
-  
-    <div class="img1">
-      <img src="images/IMG_5373.png" class="img-fluid imgIntro" alt="">
-  </div>
-   
-<!-- INTRO -->
-<section id="intro" class="p-2 mb-1">
-      <div class="container-lg">
-        <div class="row justify-content-center align-items-center mx-2">
-          <h1 class="yellow text-center text-primary py-2 rounded-pill">
-            Maak je vakantie <span id="red">onvergetelijk</span> met onze unieke activiteiten.
-          </h1>
-          <div class="yellow col-md-5 text-center text-md-start column p-2">
-            <h1>
-              <div class="h4 text-center text-primary">
-                Nederlands sprekende gidsen.
-              </div>
-              <div class="h6 text-primary text-center">
-                15 jaar in Nederland gewoond.
-              </div>
-            </h1>
-            <p class="lead m-4 text-muted">
-              Volgens mij hier een verhaaltje over iets algemeens wie jullie
-              zijn en wat jullie doen, gecertificeerd zijn, verzekeringen,
-              scherpe prijs enz. enz..
+    <!-- Show-Case -->
+    <section
+      class="showCase text-dark p-1 p-lg-0 pt-lg-1 text-center text-sm-start"
+    >
+      <div class="container">
+        <div class="d-sm-flex align-items-center justify-content-between">
+          <div class="px-1 my-1">
+            <h2 class="text-primary text-center">
+              Maak je vakantie <span id="red">onvergetelijk</span> met onze
+              unieke activiteiten.
+            </h2>
+            <p class="lead">
+              Globale beschrijving van wie jullie zijn en welke diensten er
+              worden aangeboden
             </p>
+
+            <p>
+              hier een leuk verhaaltje over OnTours in het algemeen zoals
+              bijvoorbeeld in Nederland opgegeroeid en dat jullie gecertificeerd
+              zijn en hoe de gasten tijdens de rit verzekerd zijn
+            </p>
+
+            <button class="btn btn-primary btn-lg">About-Us</button>
           </div>
-          <div class="col-md-5 mt-3 text-center">
-            <div class="">
-              <img src="images/img3.jpg" class="img-fluid  " alt="">
-          </div>
-           
-          </div>
-          
+          <img
+            class="img-fluid w-50 w-m-100 rounded-3 my-2"
+            src="images/img3.jpg"
+            alt=""
+          />
+        </div>
       </div>
-</section>
-<!-- WATERSPORT -->
-  <div class="container bar bg-primary text-center">
-   <div class="h4 bg-primary pt-1">Watersport</div>
-  </div>
+    </section>
+    <!-- News-letter -->
+    <section class="bg-secondary  text-center p-5">
+      <div class="container">
+     
+          
+        <a href="#" class="btn btn-light rounded-pill" id="nieuws-bttn"><h6 class="mt-1 mx-4 bg-white " id="red"> Cick hier voor laatste plaatselijke nieuwtjes en evenementen </h6></a>
+      </div>
+    </section>
 
-  <div class="container-lg">
-        <div class="row justify-content-center align-items-center mx-2">
+    <!-- Boxes Row 1 -->
+    <section id="eilandtour" class="">
+      <div class="h3 bg-primary text-light text-center py-2">Eiland Tour</div>
+      <div class="container-lg">
+        <div class="row justify-content-center">
+          <!-- *********************************************************** -->
+          <div class="col-sm-5 my-2">
+            <div class="card text-primary">
+              <div class="card-body text-center">
+                <div class="h2 mb-3">
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-sun-fill"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                </div>
+                <h3 class="card-title mb-3 text-light bg-primary">Eiland Groeps Tour</h3>
+                <div class="img1">
+                  <img src="images/tour/groep2.jpg" class="img-fluid" alt="" />
+                </div>
+                <div class="main-text">
+                  <p>
+                    Verken het Paradijs van Sal<br> De Meest Uitgebreide  Goeps Eilandtour.
+Stap aan boord van onze op maat gemaakte groepstour en ontdek het betoverende eiland Sal.<br><hr> <br>Met onze tour  creëren wij een unieke reiservaring voor je.<br><br>
 
-<!-- CATAMARAN -->
-<section id="catamaran" ></section>
-          <div class="col-sm-4 col-lg-3 text-center mb-2 mt-1">
-            <div class="yellow card text-primary">
-              <div class="card-body text center">
-                  <div class="h2 mb-3">
-                      <i class="bi bi-star"></i>
-                  </div>
-                  <h3 class="card-title mb-3 text-light bg-primary">
-                      Catamaran
-                  </h3>
-                  <div class="img1">
-                      <img src="images/img4.jpg" class="img-fluid" alt="">
-                  </div>
-                  <div class="main-text">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, quas? Corporis facilis accusamus adipisci temporibus perspiciatis ipsam mollitia sunt alias.</p>
-                  </div>
-                  <div class="accordion accordion-flush" id="accordionFlushExample">
-                      <div class="accordion-item ">
-                        <h2 class="accordion-header ">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                            Meer info
-                          </button>
-                        </h2>
-                        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                          <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quidem aliquam tenetur, sapiente soluta, cupiditate repellendus minus magni enim consequuntur quam neque blanditiis tempora officiis facilis accusamus atque. Consequatur, veniam.</div>
-                        </div>
-                      </div>
-                      <div class="accordion-item">
-                        <h2 class="accordion-header">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                            Prijzen
-                          </button>
-                        </h2>
-                        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                          <div class="accordion-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id accusantium commodi odit accusamus asperiores illo aperiam consequatur numquam repudiandae unde?</div>
-                        </div>
-                      </div>
-                      <div class="accordion-item">
-                        <h2 class="accordion-header">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                            Bijzonderheden
-                          </button>
-                        </h2>
-                        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                          <div class="accordion-body">De bestuurder moet beschikken over een geldig rijbewijs B.</div>
-                        </div>
+
+                  </p>
+                </div>
+                <div
+                  class="accordion accordion-flush"
+                  id="accordionFlushExampleGT"
+                >
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOneGT1"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseOneGT1"
+                      >
+                      Hoogtepunten van Jouw Groeps Avontuur:
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseOneGT1"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushExampleGT"
+                    >
+                      <div class="accordion-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Nostrum quidem aliquam tenetur, sapiente soluta,
+                        cupiditate repellendus minus magni enim consequuntur
+                        quam neque blanditiis tempora officiis facilis accusamus
+                        atque. Consequatur, veniam.
                       </div>
                     </div>
-                  <div class="socials">
-                      <i class="bi bi-facebook"></i>
                   </div>
-                  <a href="#" class="btn btn-primary">Lees meer...</a>
-              </div>
-          </div>
-          </div>
-<!-- JETSKI -->
-          <div class="col-sm-4 col-lg-3 text-center mb-2">
-          <div class="yellow card text-primary">
-              <div class="card-body text center">
-                  <div class="h2 mb-3">
-                      <i class="bi bi-star"></i>
-                  </div>
-                  <h3 id="jetski" class="card-title mb-3 text-light bg-primary">
-                      Jetski
-                  </h3>
-                  <div class="img1">
-                      <img src="images/img4.jpg" class="img-fluid" alt="">
-                  </div>
-                  <div class="main-text">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, quas? Corporis facilis accusamus adipisci temporibus perspiciatis ipsam mollitia sunt alias.</p>
-                  </div>
-                  <div class="accordion accordion-flush" id="accordionFlushExample">
-                      <div class="accordion-item ">
-                        <h2 class="accordion-header ">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                            Meer info
-                          </button>
-                        </h2>
-                        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                          <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quidem aliquam tenetur, sapiente soluta, cupiditate repellendus minus magni enim consequuntur quam neque blanditiis tempora officiis facilis accusamus atque. Consequatur, veniam.</div>
-                        </div>
-                      </div>
-                      <div class="accordion-item">
-                        <h2 class="accordion-header">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                            Prijzen
-                          </button>
-                        </h2>
-                        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                          <div class="accordion-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id accusantium commodi odit accusamus asperiores illo aperiam consequatur numquam repudiandae unde?</div>
-                        </div>
-                      </div>
-                      <div class="accordion-item">
-                        <h2 class="accordion-header">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                            Bijzonderheden
-                          </button>
-                        </h2>
-                        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                          <div class="accordion-body">De bestuurder moet beschikken over een geldig rijbewijs B.</div>
-                        </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwoGT2"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseTwoGT2"
+                      >
+                        Prijzen
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseTwoGT2"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushExampleGT"
+                    >
+                      <div class="accordion-body">
+                        <table class="table ">
+                          <div class="h6 bg-secondary text-light py-1 rounded-3">
+                            Eiland Groeps Tour
+                          </div>
+                           <tr>
+                            <td>per persoon</td>
+                            <td>€ 40,=</td> 
+                          </tr>
+                          <tr>
+                            <td>kinderen tot 12 jaar</td>
+                            <td>€ 35,=</td> 
+                          </tr>
+
+                          <tr class="">
+                            <td class="px-2 bg-primary text-light rounded">exclusief</td>
+                          </tr>
+                          <tr>
+                            <td>lunch</td>
+                            <td>€ 15,=</td> 
+                          </tr>
+                          <tr>
+                            <td>Entree Blauwe Oog</td>
+                            <td>€ 3,=</td> 
+                          </tr>
+                          <tr>
+                            <td>Entree Zwemmen Vulkaan Salinas</td>
+                            <td>€ 5,=</td> 
+                          </tr>
+                        </table>
                       </div>
                     </div>
-                  <div class="socials">
-                      <i class="bi bi-facebook"></i>
                   </div>
-                  <a href="#" class="btn btn-primary">Lees meer...</a>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThreeGT3"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseThreeGT3"
+                      >
+                        Bijzonderheden
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseThreeGT3"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushExampleGT"
+                    >
+                      <div class="accordion-body">
+                        Wij bevelen je aan waterschoenen mee te  nemen.<br>
+                        Heb je deze, niet dan kan je ze, indien nodig, ter plekke huren.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="socials">
+                  <i class="bi bi-facebook"></i>
+                </div>
+                <a href="#" class="btn btn-primary">Lees meer...</a>
               </div>
+            </div>
           </div>
+          <!-- *********************************************************** -->
+          <div class="col-sm-5 my-2">
+            <div class="card text-primary">
+              <div class="card-body text-center">
+                <div class="h2 mb-3">
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-sun-fill"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                </div>
+                <h3 class="card-title mb-3 text-light bg-primary">Eiland Privé Tour</h3>
+                <div class="img1">
+                  <img src="images/tour/pier.jpg" class="img-fluid" alt="" />
+                </div>
+                <div class="main-text">
+                  <p>
+                    Verken het Paradijs van Sal<br> De Meest Uitgebreide Eilandtour Kies Jouw Ideale Eilandavontuur!
+Stap aan boord van onze op maat gemaakte privétour en ontdek het betoverende eiland Sal op jouw
+eigen tempo. <hr>Met adembenemende stranden, historische schatten en natuurlijke wonderen om te
+verkennen, bieden we je de vrijheid om je eigen unieke reiservaring te creëren.
+                  </p>
+                </div>
+                <div
+                  class="accordion accordion-flush"
+                  id="accordionFlushExamplePT"
+                >
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOnePT1"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseOnePT1"
+                      >
+                        Hoogtepunten van Jouw Privé Avontuur
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseOnePT1"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushExamplePT"
+                    >
+                      <div class="accordion-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Nostrum quidem aliquam tenetur, sapiente soluta,
+                        cupiditate repellendus minus magni enim consequuntur
+                        quam neque blanditiis tempora officiis facilis accusamus
+                        atque. Consequatur, veniam.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwoPT2"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseTwoPT2"
+                      >
+                        Prijzen
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseTwoPT2"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushExamplePT"
+                    >
+                      <div class="accordion-body">
+                        <table class="table ">
+                          <div class="h6 bg-secondary text-light py-1 rounded-3">
+                            Eiland Privé Tour
+                          </div>
+                          <h6 class="bg-light py-2">vanaf slechts € 150,=</h6>
+                          <br>
+
+                          <tr class="">
+                            <td class="px-2 bg-primary text-light rounded">exclusief</td>
+                          </tr>
+                          <tr>
+                            <td>lunch</td>
+                            <td>€ 15,=</td> 
+                          </tr>
+                          <tr>
+                            <td>Entree Blauwe Oog</td>
+                            <td>€ 3,=</td> 
+                          </tr>
+                          <tr>
+                            <td>Entree Zwemmen Vulkaan Salinas</td>
+                            <td>€ 5,=</td> 
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThreePT3"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseThreePT3"
+                      >
+                        Bijzonderheden
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseThreePT3"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushExamplePT"
+                    >
+                      <div class="accordion-body">
+                        Wij bevelen je aan waterschoenen mee te  nemen.<br>
+                        Heb je deze niet dan kan je ze, indien nodig, ter plekke huren.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="socials">
+                  <i class="bi bi-facebook"></i>
+                </div>
+                <a href="#" class="btn btn-primary">Lees meer...</a>
+              </div>
+            </div>
+          </div>
+          <!-- *********************************************************** -->
          
-          </div>
-<!-- ZEILBOOT -->
-          <div class="col-sm-4 col-lg-3  text-center mb-2">
-            <div class="yellow card text-primary">
-              <div class="card-body text center">
-                  <div class="h2 mb-3">
-                      <i class="bi bi-star"></i>
-                  </div>
-                  <h3 id="zeilboot" class="card-title mb-3 text-light bg-primary">
-                      Zeilboot
-                  </h3>
-                  <div class="img1">
-                      <img src="images/img4.jpg" class="img-fluid" alt="">
-                  </div>
-                  <div class="main-text">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, quas? Corporis facilis accusamus adipisci temporibus perspiciatis ipsam mollitia sunt alias.</p>
-                  </div>
-                  <div class="accordion accordion-flush" id="accordionFlushExample">
-                      <div class="accordion-item ">
-                        <h2 class="accordion-header ">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                            Meer info
-                          </button>
-                        </h2>
-                        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                          <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quidem aliquam tenetur, sapiente soluta, cupiditate repellendus minus magni enim consequuntur quam neque blanditiis tempora officiis facilis accusamus atque. Consequatur, veniam.</div>
-                        </div>
-                      </div>
-                      <div class="accordion-item">
-                        <h2 class="accordion-header">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                            Prijzen
-                          </button>
-                        </h2>
-                        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                          <div class="accordion-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id accusantium commodi odit accusamus asperiores illo aperiam consequatur numquam repudiandae unde?</div>
-                        </div>
-                      </div>
-                      <div class="accordion-item">
-                        <h2 class="accordion-header">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                            Bijzonderheden
-                          </button>
-                        </h2>
-                        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                          <div class="accordion-body">De bestuurder moet beschikken over een geldig rijbewijs B.</div>
-                        </div>
+          <!-- *********************************************************** -->
+        </div>
+      </div>
+    </section>
+    <!-- Boxes Row 2 -->
+    <section id="sport" class="">
+      <div class="h3 bg-primary text-light text-center py-2">Sport</div>
+      <div class="container-lg">
+        <div class="row justify-content-center">
+          <!-- *********************************************************** -->
+          <div class="col-sm-3 my-2">
+            <div class="card text-primary">
+              <div class="card-body text-center">
+                <div class="h2 mb-3">
+                  <i class="bi bi-star"></i>
+                </div>
+                <h3 class="card-title mb-3 text-light bg-primary">Catamaran</h3>
+                <div class="img1">
+                  <img src="images/img4.jpg" class="img-fluid" alt="" />
+                </div>
+                <div class="main-text">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Facilis, quas? Corporis facilis accusamus adipisci
+                    temporibus perspiciatis ipsam mollitia sunt alias.
+                  </p>
+                </div>
+                <div
+                  class="accordion accordion-flush"
+                  id="accordionFlushExample"
+                >
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseOne"
+                      >
+                        Meer info
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseOne"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Nostrum quidem aliquam tenetur, sapiente soluta,
+                        cupiditate repellendus minus magni enim consequuntur
+                        quam neque blanditiis tempora officiis facilis accusamus
+                        atque. Consequatur, veniam.
                       </div>
                     </div>
-                  <div class="socials">
-                      <i class="bi bi-facebook"></i>
                   </div>
-                  <a href="#" class="btn btn-primary">Lees meer...</a>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseTwo"
+                      >
+                        Prijzen
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseTwo"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Id accusantium commodi odit accusamus asperiores
+                        illo aperiam consequatur numquam repudiandae unde?
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseThree"
+                      >
+                        Bijzonderheden
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseThree"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        De bestuurder moet beschikken over een geldig rijbewijs
+                        B.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="socials">
+                  <i class="bi bi-facebook"></i>
+                </div>
+                <a href="#" class="btn btn-primary">Lees meer...</a>
               </div>
+            </div>
           </div>
-          </div>
-      </div>
-
-
-<!-- SPORT -->
-<div class="container bar bg-primary text-center">
-  <div class="h4 bg-primary pt-1">Sport</div>
- </div>
-<div class="container-lg">
-  <div class="row justify-content-center align-items-center mx-2">
-    <div class="col-sm-4 col-lg-3 text-center mb-2 mt-1">
-      <div class="yellow card text-primary">
-        <div class="card-body text center">
-            <div class="h2 mb-3">
-                <i class="bi bi-star"></i>
-            </div>
-            <h3 class="card-title mb-3 text-light bg-primary">
-                Paardrijden
-            </h3>
-            <div class="img1">
-                <img src="images/img4.jpg" class="img-fluid" alt="">
-            </div>
-            <div class="main-text">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, quas? Corporis facilis accusamus adipisci temporibus perspiciatis ipsam mollitia sunt alias.</p>
-            </div>
-            
-            <div class="socials">
-                <i class="bi bi-facebook"></i>
-            </div>
-            <a href="#" class="btn btn-primary">Lees meer...</a>
-        </div>
-    </div>
-    </div>
-
-
-
-
-    <div class="col-sm-4 col-lg-3 text-center mb-2">
-    <div class="yellow card text-primary">
-        <div class="card-body text center">
-            <div class="h2 mb-3">
-                <i class="bi bi-star"></i>
-            </div>
-            <h3 class="card-title mb-3 text-light bg-primary">
-                Vissen
-            </h3>
-            <div class="img1">
-                <img src="images/img4.jpg" class="img-fluid" alt="">
-            </div>
-            <div class="main-text">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, quas? Corporis facilis accusamus adipisci temporibus perspiciatis ipsam mollitia sunt alias.</p>
-            </div>
-        
-            <div class="socials">
-                <i class="bi bi-facebook"></i>
-            </div>
-            <a href="#" class="btn btn-primary">Lees meer...</a>
-        </div>
-    </div>
-   
-    </div>
-
-    <div class="col-sm-4 col-lg-3  text-center mb-2">
-      <div class="yellow card text-primary">
-        <div class="card-body text center">
-            <div class="h2 mb-3">
-                <i class="bi bi-star"></i>
-            </div>
-            <h3 class="card-title mb-3 text-light bg-primary">
-                Snorkelen
-            </h3>
-            <div class="img1">
-                <img src="images/img4.jpg" class="img-fluid" alt="">
-            </div>
-            <div class="main-text">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, quas? Corporis facilis accusamus adipisci temporibus perspiciatis ipsam mollitia sunt alias.</p>
-            </div>
-            <div class="socials">
-                <i class="bi bi-facebook"></i>
-            </div>
-            <a href="#" class="btn btn-primary">Lees meer...</a>
-        </div>
-    </div>
-    </div>
-</div>
-
-<!-- BUGGIE TOURS -->
-<div class="container bar bg-primary text-center">
-  <div class="h4 bg-primary pt-1">Buggy Tours</div>
- </div>
-  <div class="container-lg">
-    <div class="row justify-content-center align-items-center mx-2">
-      <div class="col-sm-6 col-lg-6 text-center mb-2 mt-1">
-        
-        <div class="card sample yellow ">
-          <img src="images/img2.jpg" class="card-img-top" alt="...">
-          <div class="card-body sample-body">
-            <div class="sample-text-section text-primary">
-
-              <h5 class="card-title">Buggie (ZF 550)</h5>
-              <p class="card-text">Some quick example text to build on the card.</p>
-            </div>
-            <div class="cta-section">
-              <div class="prijs">v.a. € 35,= pp</div>
-            <a href="#" class="btn btn-primary">Meer info</a>
-          </div> 
-          </div>
-        </div>
-
-
-
-
-      </div>
-   
-     
-      <div class="col-sm-6 col-lg-6 text-center mb-2 mt-1">
-        
-        <div class="card sample yellow ">
-          <img src="images/img2.jpg" class="card-img-top" alt="...">
-          <div class="card-body sample-body">
-            <div class="sample-text-section text-primary">
-
-              <h5 class="card-title">Buggie (ZForce 1000)</h5>
-              <p class="card-text">Some quick example text to build on the card.</p>
-            </div>
-            <div class="cta-section">
-              <div class="prijs">v.a. € 35,= pp</div>
-            <a href="#" class="btn btn-primary">Meer info</a>
-          </div> 
-          </div>
-        </div>
-      </div>
-  </div>
-  
-    <div class="container-lg">
-      <div class="row justify-content-center align-items-center mx-2">
-        <div class="col-sm-6 col-lg-6 text-center mb-2 mt-1">
-          
-          <div class="card sample yellow ">
-            <img src="images/img2.jpg" class="card-img-top" alt="...">
-            <div class="card-body sample-body">
-              <div class="sample-text-section text-primary">
-  
-                <h5 class="card-title">Familie Buggie</h5>
-                <p class="card-text">Some quick example text to build on the card.</p>
+          <!-- *********************************************************** -->
+          <div class="col-sm-3 my-2">
+            <div class="card text-primary">
+              <div class="card-body text-center">
+                <div class="h2 mb-3">
+                  <i class="bi bi-star"></i>
+                </div>
+                <h3 class="card-title mb-3 text-light bg-primary">Catamaran</h3>
+                <div class="img1">
+                  <img src="images/img4.jpg" class="img-fluid" alt="" />
+                </div>
+                <div class="main-text">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Facilis, quas? Corporis facilis accusamus adipisci
+                    temporibus perspiciatis ipsam mollitia sunt alias.
+                  </p>
+                </div>
+                <div
+                  class="accordion accordion-flush"
+                  id="accordionFlushExample"
+                >
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseOne"
+                      >
+                        Meer info
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseOne"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Nostrum quidem aliquam tenetur, sapiente soluta,
+                        cupiditate repellendus minus magni enim consequuntur
+                        quam neque blanditiis tempora officiis facilis accusamus
+                        atque. Consequatur, veniam.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseTwo"
+                      >
+                        Prijzen
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseTwo"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Id accusantium commodi odit accusamus asperiores
+                        illo aperiam consequatur numquam repudiandae unde?
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseThree"
+                      >
+                        Bijzonderheden
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseThree"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        De bestuurder moet beschikken over een geldig rijbewijs
+                        B.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="socials">
+                  <i class="bi bi-facebook"></i>
+                </div>
+                <a href="#" class="btn btn-primary">Lees meer...</a>
               </div>
-              <div class="cta-section">
-                <div class="prijs">v.a. € 35,= pp</div>
-              <a href="#" class="btn btn-primary">Meer info</a>
-            </div> 
             </div>
           </div>
-  
-  
-  
-  
-        </div>
-     
-       
-        <div class="col-sm-6 col-lg-6 text-center mb-2 mt-1">
-          
-          <div class="card sample yellow ">
-            <img src="images/img2.jpg" class="card-img-top" alt="...">
-            <div class="card-body sample-body">
-              <div class="sample-text-section text-primary">
-  
-                <h5 class="card-title">Quad</h5>
-                <p class="card-text">Some quick example text to build on the card.</p>
+          <!-- *********************************************************** -->
+          <div class="col-sm-3 my-2">
+            <div class="card text-primary">
+              <div class="card-body text-center">
+                <div class="h2 mb-3">
+                  <i class="bi bi-star"></i>
+                </div>
+                <h3 class="card-title mb-3 text-light bg-primary">Catamaran</h3>
+                <div class="img1">
+                  <img src="images/img4.jpg" class="img-fluid" alt="" />
+                </div>
+                <div class="main-text">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Facilis, quas? Corporis facilis accusamus adipisci
+                    temporibus perspiciatis ipsam mollitia sunt alias.
+                  </p>
+                </div>
+                <div
+                  class="accordion accordion-flush"
+                  id="accordionFlushExample"
+                >
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseOne"
+                      >
+                        Meer info
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseOne"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Nostrum quidem aliquam tenetur, sapiente soluta,
+                        cupiditate repellendus minus magni enim consequuntur
+                        quam neque blanditiis tempora officiis facilis accusamus
+                        atque. Consequatur, veniam.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseTwo"
+                      >
+                        Prijzen
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseTwo"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Id accusantium commodi odit accusamus asperiores
+                        illo aperiam consequatur numquam repudiandae unde?
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseThree"
+                      >
+                        Bijzonderheden
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseThree"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        De bestuurder moet beschikken over een geldig rijbewijs
+                        B.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="socials">
+                  <i class="bi bi-facebook"></i>
+                </div>
+                <a href="#" class="btn btn-primary">Lees meer...</a>
               </div>
-              <div class="cta-section">
-                <div class="prijs">v.a. € 35,= pp</div>
-              <a href="#" class="btn btn-primary">Meer info</a>
-            </div> 
+            </div>
+          </div>
+          <!-- *********************************************************** -->
+        </div>
+      </div>
+    </section>
+    <!-- Boxes Row 3 -->
+    <section id="buggy" class="">
+      <div class="h3 bg-primary text-light text-center py-2">Buggy</div>
+      <div class="container-lg">
+        <div class="row justify-content-center">
+          <!-- *********************************************************** -->
+          <div class="col-md my-2">
+            <div class="card text-primary">
+              <div class="card-body text-center">
+                <div class="h2 mb-3">
+                  <i class="bi bi-star"></i>
+                </div>
+                <h5 class="card-title mb-3 text-light bg-primary p-2">Buggy (CF 550)</h5>
+                <div class="img1">
+                  <img src="images/buggie/buggys.jpeg" class="img-fluid" alt="" />
+                </div>
+                <div class="main-text">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Facilis, quas? Corporis facilis accusamus adipisci
+                    temporibus perspiciatis ipsam mollitia sunt alias.
+                  </p>
+                </div>
+                <div
+                  class="accordion accordion-flush"
+                  id="accordionFlushExample"
+                >
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseOne"
+                      >
+                        Meer info
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseOne"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Nostrum quidem aliquam tenetur, sapiente soluta,
+                        cupiditate repellendus minus magni enim consequuntur
+                        quam neque blanditiis tempora officiis facilis accusamus
+                        atque. Consequatur, veniam.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseTwo"
+                      >
+                        Prijzen
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseTwo"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                     
+                        <table class="table ">
+                            <div class="h6 bg-secondary text-light py-1 rounded-3">
+                              Buggy (CF 550)
+                            </div>
+                            <tr>
+                              <td class="px-2">2 uur</td>
+                              <td class="px-2">€ 100,=</td> 
+                            </tr>
+                            <tr>
+                              <td>3 uur</td>
+                              <td>€ 150,=</td> 
+                            </tr>
+                            <tr>
+                              <td>4 uur</td>
+                              <td>€ 180,=</td> 
+                            </tr>
+                          </table>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseThree"
+                      >
+                        Bijzonderheden
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseThree"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        De bestuurder moet beschikken over een geldig rijbewijs
+                        B.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="socials">
+                  <i class="bi bi-facebook"></i>
+                </div>
+                <a href="#" class="btn btn-primary">Lees meer...</a>
+              </div>
+            </div>
+          </div>
+          <!-- *********************************************************** -->
+          <div class="col-md my-2">
+            <div class="card text-primary">
+              <div class="card-body text-center">
+                <div class="h2 mb-3">
+                  <i class="bi bi-star"></i>
+                </div>
+                <h5 class="card-title mb-3 text-light bg-primary p-2">Buggy (ZForce 1000)</h5>
+                <div class="img1">
+                  <img src="images/img4.jpg" class="img-fluid" alt="" />
+                </div>
+                <div class="main-text">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Facilis, quas? Corporis facilis accusamus adipisci
+                    temporibus perspiciatis ipsam mollitia sunt alias.
+                  </p>
+                </div>
+                <div
+                  class="accordion accordion-flush"
+                  id="accordionFlushExample"
+                >
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseOne"
+                      >
+                        Meer info
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseOne"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Nostrum quidem aliquam tenetur, sapiente soluta,
+                        cupiditate repellendus minus magni enim consequuntur
+                        quam neque blanditiis tempora officiis facilis accusamus
+                        atque. Consequatur, veniam.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseTwo"
+                      >
+                        Prijzen
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseTwo"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Id accusantium commodi odit accusamus asperiores
+                        illo aperiam consequatur numquam repudiandae unde?
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseThree"
+                      >
+                        Bijzonderheden
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseThree"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        De bestuurder moet beschikken over een geldig rijbewijs
+                        B.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="socials">
+                  <i class="bi bi-facebook"></i>
+                </div>
+                <a href="#" class="btn btn-primary">Lees meer...</a>
+              </div>
+            </div>
+          </div>
+          <!-- *********************************************************** -->
+          <div class="col-md my-2">
+            <div class="card text-primary">
+              <div class="card-body text-center">
+                <div class="h2 mb-3">
+                  <i class="bi bi-star"></i>
+                </div>
+                <h5 class="card-title mb-3 text-light bg-primary p-2">Familie Buggie</h5>
+                <div class="img1">
+                  <img src="images/buggie/familie_buggy.jpeg" class="img-fluid" alt="" />
+                </div>
+                <div class="main-text">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Facilis, quas? Corporis facilis accusamus adipisci
+                    temporibus perspiciatis ipsam mollitia sunt alias.
+                  </p>
+                </div>
+                <div
+                  class="accordion accordion-flush"
+                  id="accordionFlushExample"
+                >
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseOne"
+                      >
+                        Meer info
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseOne"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Nostrum quidem aliquam tenetur, sapiente soluta,
+                        cupiditate repellendus minus magni enim consequuntur
+                        quam neque blanditiis tempora officiis facilis accusamus
+                        atque. Consequatur, veniam.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseTwo"
+                      >
+                        Prijzen
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseTwo"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Id accusantium commodi odit accusamus asperiores
+                        illo aperiam consequatur numquam repudiandae unde?
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseThree"
+                      >
+                        Bijzonderheden
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseThree"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        De bestuurder moet beschikken over een geldig rijbewijs
+                        B.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="socials">
+                  <i class="bi bi-facebook"></i>
+                </div>
+                <a href="#" class="btn btn-primary">Lees meer...</a>
+              </div>
+            </div>
+          </div>
+          <!-- *********************************************************** -->
+          <div class="col-md my-2">
+            <div class="card text-primary">
+              <div class="card-body text-center">
+                <div class="h2 mb-3">
+                  <i class="bi bi-star"></i>
+                </div>
+                <h5 class="card-title mb-3 text-light bg-primary p-2">Quad</h5>
+                <div class="img1">
+                  <img src="images/buggie/quad.jpg" class="img-fluid" alt="" />
+                </div>
+                <div class="main-text">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Facilis, quas? Corporis facilis accusamus adipisci
+                    temporibus perspiciatis ipsam mollitia sunt alias.
+                  </p>
+                </div>
+                <div
+                  class="accordion accordion-flush"
+                  id="accordionFlushExample11"
+                >
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapse11"
+                        aria-expanded="false"
+                        aria-controls="flush-collapse11"
+                      >
+                        Meer info
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapse11"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushExample11"
+                    >
+                      <div class="accordion-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Nostrum quidem aliquam tenetur, sapiente soluta,
+                        cupiditate repellendus minus magni enim consequuntur
+                        quam neque blanditiis tempora officiis facilis accusamus
+                        atque. Consequatur, veniam.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapse12"
+                        aria-expanded="false"
+                        aria-controls="flush-collapse12"
+                      >
+                        Prijzen
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapse12"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushExample11"
+                    >
+                      <div class="accordion-body">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Id accusantium commodi odit accusamus asperiores
+                        illo aperiam consequatur numquam repudiandae unde?
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapse13"
+                        aria-expanded="false"
+                        aria-controls="flush-collapse13"
+                      >
+                        Bijzonderheden
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapse13"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushExample11"
+                    >
+                      <div class="accordion-body">
+                        De bestuurder moet beschikken over een geldig rijbewijs
+                        B.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="socials">
+                  <i class="bi bi-facebook"></i>
+                </div>
+                <a href="#" class="btn btn-primary">Lees meer...</a>
+              </div>
+            </div>
+          </div>
+          <!-- *********************************************************** -->
+        </div>
+      </div>
+    </section>
+    <section class="bg-secondary text-light p-5">
+      <div class="container">
+        <div class="row text-center">
+          <div
+            class="d-md-flex align-items-center justify-content-between column-gap-4"
+          >
+            <div class="col-lg-6 bg-danger">
+              <div class="card" id="card-row">1</div>
+            </div>
+            <div class="col-lg-6 bg-danger">
+              <div class="card" id="card-row">2</div>
             </div>
           </div>
         </div>
-    </div>
-
-<!-- DIVERSE -->
-<div class="container bar bg-primary text-center">
-  <div class="h4 bg-primary pt-1">Adventure</div>
- </div>
-<div class="container-lg">
-  <div class="row justify-content-center align-items-center mx-2">
-    <div class="col-sm-4 col-lg-3 text-center mb-2 mt-1">
-      <div class="yellow p-5 text-primary"> 
-          Groeps Eiland Tour
-        </div>
-    </div>
-    <div class="col-sm-4 col-lg-3 text-center mb-2">
-      <div class="yellow p-5 text-primary">Prive Eiland Tour</div>
-    </div>
-    <div class="col-sm-4 col-lg-3  text-center mb-2">
-      <div class="yellow p-5 text-primary">Zipline</div>
-    </div>
-</div>
+      </div>
+    </section>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
