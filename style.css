@@ -30,15 +30,18 @@ body {
 }
 #nieuws {
   color: red;
-  font-size: 1.2em;
+  font-size: 3.2em;
 }
 #nieuws-bttn {
   border: 5px solid yellow;
   box-shadow: 0px 0px 45px yellow;
-}
-#red {
   color: red;
+  padding: 0 5em;
   letter-spacing: 1px;
+}
+#nieuws-bttn:hover {
+  border: 5px solid red;
+  box-shadow: 0px 0px 45px red;
 }
 .card {
   background-color: rgba(255, 255, 0, 0.8);
@@ -85,7 +88,10 @@ body {
     width: 50%;
   }
 }
-
+.acc {
+  border: 5px solid blue;
+  border-radius: 10px;
+}
 @media (max-width: 750px) {
   #background-video {
     display: none;
