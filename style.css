@@ -29,12 +29,9 @@ body {
   background-color: blue;
 }
 
-.nieuws-bttn {
-  border-radius: 50px;
+.nieuws {
   border: 5px solid yellow;
   box-shadow: 0px 0px 45px yellow;
-  color: red;
-  padding: 0.5em;
 
   letter-spacing: 1px;
 }
