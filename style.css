@@ -35,7 +35,7 @@ body {
 
   letter-spacing: 1px;
 }
-.nieuws-bttn:hover {
+.nieuws:hover {
   border: 5px solid red;
   box-shadow: 0px 0px 45px red;
 }

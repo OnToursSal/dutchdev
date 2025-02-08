@@ -1,0 +1,81 @@
+body {
+  background-color: #ffd300;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  align-items: flex-start;
+  justify-content: end;
+  height: 100vh;
+  margin: 0;
+}
+.logo {
+  height: 5em;
+  width: 5em;
+  border-radius: 1em;
+  margin-left: 0.5em;
+}
+hr {
+  border: 3px solid red;
+}
+
+#weather-container {
+  /* display: flex;
+  flex-direction: column;
+  align-items: flex-center; */
+  background-color: rgba(255, 255, 255, 0.3);
+  max-width: 10em;
+  padding: 1px;
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  margin-top: 5px;
+  border: 1px solid white;
+  text-align: center;
+}
+
+h2,
+label,
+p {
+  color: #fff;
+  margin: 2px 0;
+}
+
+#temp-div p {
+  font-size: 20px;
+  margin-top: -30px;
+}
+#weather-info {
+  font-size: 1em;
+}
+
+#weather-icon {
+  width: 4em;
+  height: 4em;
+  margin: 0 auto 10px;
+  margin-bottom: 10px;
+  display: none;
+}
+#hourly-forecast {
+  margin-top: 10px;
+  overflow-x: auto;
+  white-space: nowrap;
+  display: flex;
+  justify-content: space-between;
+}
+#hourly-item {
+  flex: 0 0 auto;
+  width: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 10px;
+  color: white;
+}
+#hourly-item img {
+  width: 60px;
+  height: 30px;
+  margin-bottom: 5px;
+}
+#hourly-heading {
+  color: #fff;
+  margin-top: 50px;
+}

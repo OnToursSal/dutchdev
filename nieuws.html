@@ -20,17 +20,59 @@
       rel="stylesheet"
     />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="nieuws.css" />
     <title>OnTours Nieuws</title>
   </head>
 </html>
 <body>
-  <div class="container text-center text-light">
-    <h1>Nieuws</h1>
- 
-  <a href="index.html" class="btn btn-primary">Home...</a>
-
+  <nav
+  class="navbar fixed-bottom navbar-expand-lg bg-primary navbar-dark py-3"
+>
+  <div class="container">
+    <img class="logo" src="images/logo1.jpg" alt="" />
+    <a href="index.html" class="navbar-brand px-5">
+      On Tours</a
+    >
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navmenu"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navmenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a href="/index.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="/index.html#eilandtour" class="nav-link">Eiland Tour</a>
+        </li>
+        <li class="nav-item">
+          <a href="/index.html#sport" class="nav-link">Sport</a>
+        </li>
+        <li class="nav-item">
+          <a href=/index.hml#buggy" class="nav-link">Buggy Tours</a>
+        </li>
+        <li class="nav-item">
+          <a href="/index.hml#diverse" class="nav-link">Diverse</a>
+        </li>
+         
+      </ul>
+    </div>
   </div>
+</nav>
+  <div class="container">
+
+    <div id="weather-container">
+      <img id="weather-icon" alt="Weather Icon">
+      <div id="temp-div"></div>
+      <div id="weather-info"></div>
+    <!-- <div id="hourly-forecast"></div> -->
+    </div>
+  </div>
+  
   
 
 <script
@@ -38,6 +80,6 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.j
 integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
 crossorigin="anonymous"
 ></script>
-<script src="main.js"></script>
+<script src="nieuws.js"></script>
 </body>
 </html>
